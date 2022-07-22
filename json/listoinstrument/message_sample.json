@@ -1,0 +1,41 @@
+{
+    "RawData": "",
+    "LisToInstrument": {
+        "OrderId": "162926968913261",
+        "SerialNumber": "",
+        "CommandIdentifier": "NW",
+        "OrderCreateTime": "20210818065357",
+        "EncounterType": "\u56fa\u5b9a\u7684",
+        "Department": "\u6d4b\u8bd5140",
+        "DepartmentCode": "120",
+        "Diagnosis": "\u6d4b\u8bd5110",
+        "DiagnosisIcd": "",
+        "PatientProfile": {
+            "PatientId": 429498,
+            "BirthDate": "20110504",
+            "Gender": "U"
+        },
+        "TestItems": [{
+            "ItemCode": "ALP",
+            "ItemName": "ALP",
+            "ReferenceRange": ""
+        }],
+        "SendingApplication": "FAC1",
+        "SendingFacility": "",
+        "ReceivingApplication": "",
+        "ReceivingFacility": "",
+        "DateTimeOfMessage": "",
+        "Security": "",
+        "MessageType": "",
+        "MessageControlId": "",
+        "ProcessingId": "",
+        "VersionId": "",
+        "SequenceNumber": "",
+        "ContinuationPointer": "",
+        "AcceptAcknowledgementType": "",
+        "ApplicationAcknowledgementType": "",
+        "CountryCode": "",
+        "CharacterSet": "",
+        "PrincipalLanguageOfMessage": ""
+    }
+}

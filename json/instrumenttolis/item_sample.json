@@ -1,0 +1,50 @@
+{
+  "RawData": "",
+  "InstrumentToLis": {
+    "OrderId": "162926968913261",
+    "ResultCreateTime": "20210818065357",
+    "EncounterType": "",
+    "Department": "\u6d4b\u8bd5140",
+    "DepartmentCode": "120",
+    "Diagnosis": "",
+    "DiagnosisIcd": "",
+    "MiddlewareValidationResult": "1",
+    "PatientProfile": {
+      "PatientId": 429498,
+      "BirthDate": "20110504",
+      "Gender": "U"
+    },
+    "TestItemResults": [{
+      "ResultValue": "2.21",
+      "ResultDescription": "",
+      "Unit": "",
+      "ReferenceRangeMin": "",
+      "ReferenceRangeMax": "",
+      "RackNo": "",
+      "PositionNo": "",
+      "InstrumentNo": "",
+      "Module": "",
+      "Comments": [],
+      "ItemCode": "ALP",
+      "ItemName": "ALP",
+      "ReferenceRange": ""
+    }],
+    "SendingApplication": "FAC1",
+    "SendingFacility": "",
+    "ReceivingApplication": "",
+    "ReceivingFacility": "",
+    "DateTimeOfMessage": "",
+    "Security": "",
+    "MessageType": "",
+    "MessageControlId": "",
+    "ProcessingId": "",
+    "VersionId": "",
+    "SequenceNumber": "",
+    "ContinuationPointer": "",
+    "AcceptAcknowledgementType": "",
+    "ApplicationAcknowledgementType": "",
+    "CountryCode": "",
+    "CharacterSet": "",
+    "PrincipalLanguageOfMessage": ""
+  }
+}

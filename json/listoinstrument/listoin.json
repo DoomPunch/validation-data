@@ -1,0 +1,27 @@
+{
+    "rawData": "",
+    "lisToInstrument": {
+      "messageControlId": "",
+      "orderId": "162911109690229",
+      "serialNumber": "",
+      "commandIdentifier": "NW",
+      "orderCreateTime": "20210816032136",
+      "encounterType": "IC",
+      "department": "\u6d4b\u8bd5140",
+      "departmentCode": "120",
+      "diagnosis": "\u6d4b\u8bd5110",
+      "diagnosisIcd": "",
+      "patientProfile": {
+        "patientId": "604280",
+        "birthDate": "19420701",
+        "gender": "M"
+      },
+      "testItems": [
+        {
+          "itemCode": "ALP",
+          "itemName": "ALP",
+          "referenceRange": ""
+        }
+      ]
+    }
+  }

@@ -1,0 +1,27 @@
+{
+    "rawData": "",
+    "instrumentToLis": {
+      "messageControlId": "",
+      "orderId": "162911109690229",
+      "resultCreateTime": "20210816032136",
+      "middlewareValidationResult": "0",
+      "testItemResults": [
+        {
+          "itemCode": "ALP",
+          "itemName": "ALP",
+          "referenceRange": "",
+          "resultValue": "1.22",
+          "resultDescription": "",
+          "unit": "",
+          "referenceRangeMin": "",
+          "referenceRangeMax": "",
+          "rackNo": "",
+          "positionNo": "",
+          "instrumentNo": "",
+          "module": "",
+          "comments": [
+          ]
+        }
+      ]
+    }
+  }
