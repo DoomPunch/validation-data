@@ -26,7 +26,7 @@ def result(orderid, patient_id, birthday, itemss, t, gender):
     # 自动审核结果  -1：不支持 0:不通过 1:通过
     Mvr = ['0', '1']
     # random.shuffle(Mvr)
-    MiddlewareValidationResult = Mvr[1]
+    MiddlewareValidationResult = Mvr[0]
     ItemMessage = {
         "RawData": "",
         "InstrumentToLis": {

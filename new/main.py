@@ -1,5 +1,6 @@
 import random
 from models import *
+import asyncio
 
 ITEMS = {
         'TG': {'mid_code': 'TG', 'min_range': 0.55, 'max_range': 1.7},
@@ -76,7 +77,12 @@ def built_results(all_item):
     for item, value in all_item.items():
         pass
 
+async def send_mq_message(i):
+    print(i)
+    await asyncio.sleep(random.uniform(0.0, 10)/10)
+    print(i)
+
 
 if __name__ == '__main__':
-    for k in ITEMS:
-        pass
+    for i in range(10):
+        asyncio.run()

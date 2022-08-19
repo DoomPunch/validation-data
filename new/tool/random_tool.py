@@ -18,10 +18,10 @@ class RandomSelf():
         # year = time.strftime("%Y", time.localtime())
         year = '2022'
         # year = '2003'
-        month = time.strftime("%m", time.localtime())
-        # month = '04'
+        # month = time.strftime("%m", time.localtime())
+        month = '01'
         # day = time.strftime("%d", time.localtime())
-        day = "{:02d}".format(random.randint(11, 26))
+        day = "{:02d}".format(random.randint(1, 15))
         hour = "{:02d}".format(random.randint(0, 18))
         # hour = time.strftime("%H", time.localtime())
         minute = "{:02d}".format(random.randint(0, 59))

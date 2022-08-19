@@ -31,25 +31,25 @@ services = {
 '''
 CommandIdentifier = ['NW', 'CA', 'XO']
 
-
 # 创建csv文件，并生成csv表头
 f = open('测试数据.csv', 'w', encoding='utf-8')
 csv_writer = csv.writer(f)
 csv_writer.writerow(["id", "listoins", "instolis"])
 
-for i in range(1):
+for i in range(50):
     OrderId = RandomSelf.random_id()
 
     time1 = RandomSelf.random_secondtime()
     # 第二个时间在第一个时间后1-5小时
     time2 = str(random.randint(1, 5)*10000 + int(time1))
-    PatientId = int(OrderId) % 100000000
-    # PatientId = 987654321
-    BirthDay = RandomSelf.random_birthday()
-    # Gender = RandomSelf.random_gender()
-    Gender = 'M'
 
-    time.sleep(0.1)
+    PatientId = int(OrderId) % 100000000
+    # PatientId = 9876543210
+    BirthDay = RandomSelf.random_birthday()
+    # BirthDay = '19990808'
+    Gender = RandomSelf.random_gender()
+    # Gender = 'UNKNOWN'
+
     OrderId2 = RandomSelf.random_id()
     PatientId2 = int(OrderId2) % 100000000
     BirthDay2 = RandomSelf.random_birthday()
@@ -63,25 +63,68 @@ for i in range(1):
     #          'LPA', 'MG', 'NA', 'PHOS', 'RF', 'SAA', 'sdLDL-C', 'TG', 'TP', 'UA', 'UREA', 'HCY']
     # items = ['ALB', 'GA']
     items = {
-        'ALB': '40',
-        'GA': '15',
+        # 'ABC': '1.0',
+
+        # 'TG': '0.80',
+        # 'GLU': '3.3',
+        # 'TP': '67',
+        # 'UA': '772',
+        # 'APO_A': '1.5',
+        # 'APO_B': '1.02',
+        # 'CREA': '266',
+        # 'DBIL': '4',
+        # 'ADA': '14',
+        # 'sdLDL-C': '120',
+        # 'HDL_C': '1.16',  # > 1.15
+        # 'ALB': '45',
+        # 'ALP': '88',
+        # 'ALT': '40',
+        # 'AST': '20',
+        # 'HBDH': '73',
+        # 'GGT': '40',
+        # 'LDH': '130',
+        # 'LAP': '30',
+        # 'PA': '350',
+        # 'CO2': '19.5',
+        # 'CHOL': '3.39',  # 3.38-5.2
+        # 'TBA': '5.5',
+        # 'TBIL': '5',
+        'CK': '1',
+        'CKMB': '20',
+        'UREA': '42.2',
+
+        # 'EFT': '200',
+        # 'FRUC': '250',
+        # 'GA': '13',
+        # 'GAD': '200',
+        # 'HCY': '14',
+        # 'CRP': '4',
+        # 'AFU': '35',
+        # 'CA': '2.5',
+        # 'CH50': '24',
+        # 'ASLO': '100',
+        # 'RF': '13',
         # 'NA': '140',
-        'TP': '66',
-        # 'TBA': '12.1',
-        'AFU': '20',
-        'CH50': '40',
-        'AST': '18.5',
-        'RF': '10',
-        'ADA': '12',
-        'UREA': '5.55',
-        'GAD': '20',
-        'EFT': '40',
+        # 'LPA': '200',
+        # 'Lipaemic': '7',
+        # 'LDL_C': '1.8',  # < 3.37
+        # 'Icteric': '4',
+        # 'HSCRP': '3',
+        # 'Hemoliti': '8',
+        # 'CYSC': '1.1',
+        # 'ALBD': '300',
+        # 'HP': '14',
+        # 'K': '5',
+        # 'MG': '0.77',
+        # 'PHOS': '1.2',
+        # 'SAA': '8',
+        # 'CL': '100',
     }
     # items = ['TG']
     # mid
     # result middle
     # items2 = []
-    items2 = ['BUN']
+    # items2 = ['BUN']
     Message = message(OrderId, CommandIdentifier[0], PatientId, BirthDay, items, time1, Gender)
     # Message2 = message(OrderId2, CommandIdentifier[0], PatientId2, BirthDay2, items3, time1, Gender)
     Result = result(OrderId, PatientId, BirthDay, items, time2, Gender)
@@ -97,11 +140,11 @@ for i in range(1):
     # 在csv插入数据
     csv_writer.writerow([OrderId,  Message, Result])
 
-    for i in range(1):
+    for j in range(1):
         # LisToInstrumentDto 申请
         # print("第一次message")
         Rb.send_message(Message, services['LisToInstrument'])
-        print(OrderId)
+        print(str(i) + ' : ' +str(OrderId))
         # print(PatientId + ' - ' + BirthDay + ' - ' + Gender)
 
         # time.sleep(5)

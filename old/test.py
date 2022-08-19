@@ -1,10 +1,10 @@
-itemss = {
-        'ALB': '40',
-        'GA': '15',
-        'NA': '140',
-        'TP': '66'
-    }
+
+def fuck():
+    """这是一个fuck
+    fuck fuck fuck
+    """
+    good = 1
 
 
-for a, b in itemss.items():
-    print(a + ':' + b)
+if __name__ == '__main__':
+    help(fuck)
